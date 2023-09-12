@@ -5,20 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class ForgotPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_forgot_password);
 
-        TextView forgotPass = findViewById(R.id.forgotPasswordClickable);
-        forgotPass.setOnClickListener(new View.OnClickListener(){
+        TextView goBack = findViewById(R.id.goBackClickable);
+        goBack.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent intent = new Intent(MainActivity.this, ForgotPassword.class);
+                Intent intent = new Intent(ForgotPassword.this, MainActivity.class);
                 startActivity(intent);
             }
         });
