@@ -6,6 +6,234 @@
     android:layout_height="match_parent"
     tools:context=".HomeScreen">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:id="@+id/welcomeLinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Welcome, "
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Hammad"
+            android:textColor="#f08405"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Featured Items"
+        android:layout_below="@+id/welcomeLinearLayout"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/featuredItemsText"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/featuredItemsText"
+        android:id="@+id/featuredItemsScroll"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="230dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="110dp"
+                    android:background="#d9d9d9"
+                    android:id="@+id/cardImage"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Item Name"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$10/hr"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="#f08405"
+                        android:layout_marginLeft="90dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_location_on_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Islamabad"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="7th Mar"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:padding="5dp"
+                        android:layout_marginLeft="65dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/featuredItemsScroll"
+        android:id="@+id/yourItemsLayout"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Items"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/yourItemsText"
+            /> <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textSize="15dp"
+            android:layout_marginLeft="180dp"
+            android:textColor="#f08405"
+            android:id="@+id/viewALlText"
+            />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourItemsLayout"
+        android:id="@+id/yourItemsScroll"
+        android:layout_marginLeft="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="230dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="230dp"
+                    android:layout_height="110dp"
+                    android:background="#d9d9d9"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Item Name"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="$10/hr"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="#f08405"
+                        android:layout_marginLeft="90dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_remove_red_eye_24"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="395"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:padding="5dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="7th Mar"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:padding="5dp"
+                        android:layout_marginLeft="100dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </HorizontalScrollView>
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
