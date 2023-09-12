@@ -22,5 +22,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TextView signup = findViewById(R.id.signupClickable);
+        signup.setOnClickListener(new View.OnClickListener(){
+            public void onClick (View view){
+                Intent intent = new Intent(MainActivity.this, Registration.class);
+                startActivity(intent);
+            }
+        });
     }
 }
