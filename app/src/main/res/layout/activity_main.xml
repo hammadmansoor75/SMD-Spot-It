@@ -85,7 +85,8 @@
         android:textAllCaps="false"
         android:gravity="center"
         android:padding="15dp"
-        android:letterSpacing="0"></Button>
+        android:id="@+id/loginButton"
+        android:letterSpacing="0"/>
 
     <Space
         android:layout_width="match_parent"

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
                 Intent intent = new Intent(MainActivity.this, Registration.class);
+                startActivity(intent);
+            }
+        });
+
+        Button login = findViewById(R.id.loginButton);
+        login.setOnClickListener(new View.OnClickListener(){
+            public void onClick (View view){
+                Intent intent = new Intent(MainActivity.this, HomeScreen.class);
                 startActivity(intent);
             }
         });
