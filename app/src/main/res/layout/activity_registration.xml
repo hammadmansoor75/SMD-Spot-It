@@ -136,7 +136,8 @@
             android:textAllCaps="false"
             android:gravity="center"
             android:padding="15dp"
-            android:letterSpacing="0"/>
+            android:letterSpacing="0"
+            android:id="@+id/signupButton"/>
 
         <TextView
             android:layout_width="wrap_content"
