@@ -6,35 +6,35 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-public class MessageScreen extends AppCompatActivity {
+public class CapturePhotoScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_message_screen);
+        setContentView(R.layout.activity_capture_photo_screen);
 
 
-        ImageView arrowBack = findViewById(R.id.backMessageScreen);
+        ImageView cancel = findViewById(R.id.cancel);
 
-        arrowBack.setOnClickListener(new View.OnClickListener() {
+        cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MessageScreen.this,ChatScreen.class);
+                Intent intent = new Intent(CapturePhotoScreen.this,MessageScreen.class);
                 startActivity(intent);
             }
         });
 
 
-        ImageView cameraIcon = findViewById(R.id.cameraIcon);
+        TextView video = findViewById(R.id.video);
 
-        cameraIcon.setOnClickListener(new View.OnClickListener() {
+        video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MessageScreen.this,CapturePhotoScreen.class);
+                Intent intent = new Intent(CapturePhotoScreen.this,CaptureVideoScreen.class);
                 startActivity(intent);
             }
         });
     }
-
 }
