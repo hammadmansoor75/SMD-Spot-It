@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
@@ -38,6 +41,15 @@ public class HomeScreen extends AppCompatActivity {
                     return true;
                 }
                 return false;
+            }
+        });
+
+
+        LinearLayout item = findViewById(R.id.item);
+        item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeScreen.this,ItemDetailsScreen.class));
             }
         });
     }
