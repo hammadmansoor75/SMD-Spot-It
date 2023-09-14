@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -38,6 +40,16 @@ public class ChatScreen extends AppCompatActivity {
                     return true;
                 }
                 return false;
+            }
+        });
+
+
+        LinearLayout linearLayout = findViewById(R.id.first);
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ChatScreen.this,MessageScreen.class));
             }
         });
     }
