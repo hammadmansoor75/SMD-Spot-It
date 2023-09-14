@@ -35,6 +35,26 @@ public class MessageScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView videoIcon = findViewById(R.id.videoIcon);
+
+        videoIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MessageScreen.this,VideoCallScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView audioIcon = findViewById(R.id.audioIcon);
+
+        audioIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MessageScreen.this,PhoneCallScreen.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

@@ -34,13 +34,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
-            android:src="@drawable/baseline_phone_24"/>
+            android:src="@drawable/baseline_phone_24"
+            android:id="@+id/audioIcon"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
             android:layout_gravity="center"
+            android:id="@+id/videoIcon"
             android:src="@drawable/round_videocam_24"/>
 
     </LinearLayout>
