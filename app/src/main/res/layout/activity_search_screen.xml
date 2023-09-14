@@ -18,6 +18,7 @@
         android:layout_margin="20dp"
         />
 
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +31,18 @@
         android:layout_marginLeft="20dp"
         android:background="@drawable/rounded_corners_text"
         android:id="@+id/searchInput"
+        android:imeOptions="actionSearch"
+        android:drawableLeft="@drawable/baseline_searching_24"
+        android:singleLine="true"
         />
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/baseline_searching_24"-->
+<!--        android:layout="@+id/searchInput"-->
+<!--        android:layout_alignBottom="@+id/searchInput"-->
+<!--        android:id="@+id/searchIcon"/>-->
 
         <TextView
             android:layout_width="match_parent"
