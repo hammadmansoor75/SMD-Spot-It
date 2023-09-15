@@ -42,6 +42,10 @@ public class SearchScreen extends AppCompatActivity {
                     // Handle Profile item click
                     startActivity(new Intent(SearchScreen.this, ChatScreen.class));
                     return true;
+                }else if (itemId == R.id.action_add) {
+                    // Handle Profile item click
+                    startActivity(new Intent(SearchScreen.this,AddItemScreen.class));
+                    return true;
                 }
                 return false;
             }

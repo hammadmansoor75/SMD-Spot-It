@@ -37,6 +37,11 @@ public class ProfileScreen extends AppCompatActivity {
                     startActivity(new Intent(ProfileScreen.this, ChatScreen.class));
                     return true;
                 }
+                else if (itemId == R.id.action_add) {
+                    // Handle Profile item click
+                    startActivity(new Intent(ProfileScreen.this,AddItemScreen.class));
+                    return true;
+                }
                 return false;
             }
         });

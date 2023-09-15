@@ -38,6 +38,10 @@ public class ChatScreen extends AppCompatActivity {
                 } else if (itemId == R.id.action_chat) {
                     // Handle Profile item click
                     return true;
+                }else if (itemId == R.id.action_add) {
+                    // Handle Profile item click
+                    startActivity(new Intent(ChatScreen.this,AddItemScreen.class));
+                    return true;
                 }
                 return false;
             }

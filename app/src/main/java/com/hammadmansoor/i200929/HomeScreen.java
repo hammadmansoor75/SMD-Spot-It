@@ -40,6 +40,11 @@ public class HomeScreen extends AppCompatActivity {
                     startActivity(new Intent(HomeScreen.this, ChatScreen.class));
                     return true;
                 }
+                else if (itemId == R.id.action_add) {
+                    // Handle Profile item click
+                    startActivity(new Intent(HomeScreen.this,AddItemScreen.class));
+                    return true;
+                }
                 return false;
             }
         });

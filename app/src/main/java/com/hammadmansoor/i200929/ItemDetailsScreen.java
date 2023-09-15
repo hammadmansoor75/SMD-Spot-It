@@ -7,6 +7,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ItemDetailsScreen extends AppCompatActivity {
 
@@ -21,6 +22,17 @@ public class ItemDetailsScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ItemDetailsScreen.this,HomeScreen.class));
+            }
+        });
+
+
+
+        TextView report = findViewById(R.id.report);
+
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ItemDetailsScreen.this,ReportScreen.class));
             }
         });
     }
