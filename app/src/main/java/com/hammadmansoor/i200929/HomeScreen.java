@@ -2,6 +2,7 @@ package com.hammadmansoor.i200929;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -50,7 +51,7 @@ public class HomeScreen extends AppCompatActivity {
         });
 
 
-        LinearLayout item = findViewById(R.id.item);
+        CardView item = findViewById(R.id.item);
         item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
