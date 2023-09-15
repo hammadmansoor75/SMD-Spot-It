@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -45,5 +47,15 @@ public class ProfileScreen extends AppCompatActivity {
                 return false;
             }
         });
+
+
+        ImageView editIcon = findViewById(R.id.editIcon);
+        editIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileScreen.this,EditProfileScreen.class));
+            }
+        });
+
     }
 }
