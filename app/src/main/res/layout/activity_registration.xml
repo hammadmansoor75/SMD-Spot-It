@@ -46,12 +46,32 @@
         android:textColor="#56595d"
         android:textSize="20dp"
         android:background="@drawable/rounded_corners_text"
+        android:id="@+id/name"
         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:padding="15dp"
+            android:textColor="#56595d"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_corners_text"
+            android:id="@+id/email"
+            />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="Password"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="7dp"
@@ -60,11 +80,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter email"
+        android:hint="Enter Password"
         android:padding="15dp"
         android:textColor="#56595d"
         android:textSize="20dp"
         android:background="@drawable/rounded_corners_text"
+        android:id="@+id/password"
         />
 
     <TextView
@@ -84,6 +105,7 @@
         android:textColor="#56595d"
         android:textSize="20dp"
         android:background="@drawable/rounded_corners_text"
+        android:id="@+id/contactNumber"
         />
 
     <TextView
@@ -103,6 +125,7 @@
         android:textColor="#56595d"
         android:textSize="20dp"
         android:background="@drawable/rounded_corners_text"
+        android:id="@+id/country"
         />
 
     <TextView
@@ -122,6 +145,7 @@
         android:textColor="#56595d"
         android:textSize="20dp"
         android:background="@drawable/rounded_corners_text"
+        android:id="@+id/city"
         />
 
         <Button

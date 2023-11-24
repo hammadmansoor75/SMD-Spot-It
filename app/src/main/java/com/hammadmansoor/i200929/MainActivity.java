@@ -43,8 +43,13 @@ public class MainActivity extends AppCompatActivity {
                 new LoginTask().execute(email, password);
             }
         });
-    }
 
+
+    }
+    public void Signup(View view){
+        startActivity(new Intent(MainActivity.this, Registration.class));
+
+    }
     private class LoginTask extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
